@@ -44,6 +44,14 @@ function Header() {
 
     }
 
+    function handleHighlightText(event) {
+        const navLeftOffHightlights =  document.getElementsByClassName('left-nav-ul-items');
+        for (let i = 0; i < navLeftOffHightlights.length; i++) {
+            navLeftOffHightlights[i].classList.value = 'left-nav-ul-items';
+        }
+        event.target.classList.value = 'left-nav-ul-items selected';
+    }
+
     return(
 
         <header>
@@ -51,10 +59,10 @@ function Header() {
                 <div className="left-nav-burger-icon toggle-left-nav-trigger-mobile hide-desktop">
                     <img src={imgNavLocation + "/left-nav/burger-bar.png"} alt="Burger icon" width="20" height="20"  onClick={handleLeftNavMobileOpenClose} />
                     <ul className="left-nav-ul-list toggle-left-nav-mobile hide-mobile show-desktop">
-                        <li className="left-nav-ul-items selected">WOMEN</li>
-                        <li className="left-nav-ul-items">MAN</li>
-                        <li className="left-nav-ul-items">PLUS</li>
-                        <li className="left-nav-ul-items">ACCESSORIES</li>
+                        <li className="left-nav-ul-items selected" onClick={handleHighlightText}>WOMEN</li>
+                        <li className="left-nav-ul-items" onClick={handleHighlightText}>MAN</li>
+                        <li className="left-nav-ul-items" onClick={handleHighlightText}>PLUS</li>
+                        <li className="left-nav-ul-items" onClick={handleHighlightText}>ACCESSORIES</li>
                     </ul>
                 </div>
             </div>
