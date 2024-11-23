@@ -1,13 +1,11 @@
 import React, {useState} from 'react'
 
-function Hero() {
-    return(
-        <>
+function Mainbanner() {
+    return (
             <div>
                 hello sir
             </div>
-        </>
     );
 }
 
-export default Hero
+export default Mainbanner
