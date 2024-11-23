@@ -1,3 +1,43 @@
+@font-face {
+	font-family:'Montserrat-Black';
+	src:url(./assets/font/Montserrat-Black.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-Bold';
+	src:url(./assets/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-ExtraLight';
+	src:url(./assets/font/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-Light';
+	src:url(./assets/font/Montserrat-Light.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-Medium';
+	src:url(./assets/font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-Regular';
+	src:url(./assets/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-SemiBold';
+	src:url(./assets/font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+	font-family:'Montserrat-ExtraBold';
+	src:url(./assets/font/Montserrat-ExtraBold.ttf);
+}
+
 /* Mobile devices start */
 body{
   margin: 0px;
@@ -79,7 +119,7 @@ header {
 
 .left-nav-ul-items {
   padding:5px 0px;
-  font-family: Arial;
+  font-family:'Montserrat-Regular';
   font-size: 16px;
   
 }
@@ -88,7 +128,7 @@ header {
 }
 
 .currency-select {
-  font-family:Arial;
+  font-family:'Montserrat-Regular';
   border: none;
   font-size: 16px;
   display: none;
@@ -134,15 +174,58 @@ header {
 }
 
 .benefits-sub-container p {
-  font-family: Arial;
+  font-family:'Montserrat-Regular';
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.hero-banner-main-container img {
+  width: 100%;
+}
+.deals-main-container {
+  display: block;
+  margin: 25px 15px;
+  text-align: center;
+}
+.deals-items-container {
+  display: inline-block;
+  margin-top: 15px;
+  width: 50%;
+}
+.main-text {
+  font-family:'Montserrat-Regular';
+  font-size: 32px;
+  line-height: 39.01px;
+  font-weight: 600;
+  text-align: center;
+}
+.sub-text {
+  font-family:'Montserrat-Regular';
+  font-size: 10px;
+  line-height: 12.19px;
+  font-weight: 400;
+  text-align: center;
+}
+.deals-btn {
+  background: #000;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.deals-btn:hover,.deals-btn:focus {
+  background: #fff;
+  color: #000;
+}
 /* Mobile devices end */
 @media(min-width:480px){
   /* Mobile (landscape) devices start */
-  
+  .deals-main-container {
+    margin: 70px 40px;
+  }
   /* Mobile (landscape) devices end */
 }
 
@@ -182,6 +265,9 @@ header {
     align-items: center;
     justify-content: center;
   }
+  .deals-items-container {
+    width: 25%;
+  }
   /* Tablet (landscape)  devices end */
 }
 
@@ -192,10 +278,20 @@ header {
     width: 100%;
     height: 50px;
   }
+  .deals-main-container {
+    display: flex;
+  }
   .benefits-sub-container {
     padding: 0px;
     display: table-cell;
     vertical-align: middle;
-}
+  }
+  .deals-items-container {
+    width: 17%;
+    margin-top: 0px;
+  }
+  .deals-btn {
+    margin-top: 0px;
+  }
   /* Desktop devices end */
 }
