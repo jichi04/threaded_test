@@ -7,7 +7,7 @@ function Deals() {
                         {id:3, maintext:'$20 OFF', subtext:'on orders above $150'},
                         {id:4, maintext:'$30 OFF', subtext:'on orders above $200'},
     ];  
-    const listOfDeatils = dealssArr.map(dealsData => <div className="deals-items-container"><div className="main-text">{dealsData.maintext}</div><div className="sub-text">{dealsData.subtext}</div></div>)
+    const listOfDeatils = dealssArr.map(dealsData => <div className="deals-items-container" key={dealsData.id}><div className="main-text">{dealsData.maintext}</div><div className="sub-text">{dealsData.subtext}</div></div>)
     return (
         <div className="deals-main-container">
             {listOfDeatils}
